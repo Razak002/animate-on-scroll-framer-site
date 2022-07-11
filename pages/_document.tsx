@@ -38,6 +38,21 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
           <link rel="shortcut icon" href="/AOSF.png" type="image/x-icon" />
+          <meta
+            name="description"
+            content="A React.js animation library made to make adding animating into view easier for all React.js developers"
+          />
+          <meta property="og:image" content="/AOSF.png" />
+          <meta property="og:title" content="AOSF" />{" "}
+          <meta
+            property="twitter:title"
+            content="AOSF: Animate On Scroll Framer"
+          />
+          <meta property="twitter:image" content="/AOSF.png" />
+          <meta
+            property="twitter:description"
+            content="A React.js animation library made to make adding animating into view easier for all React.js developers"
+          />
         </Head>
         <body className="selection:bg-black overflow-x-hidden">
           <Main />

@@ -1,6 +1,5 @@
 import { AnimateOnScroll } from "animate-on-scroll-framer";
 import Image from "next/image";
-import { LegacyRef, MutableRefObject } from "react";
 import { refProp } from "../pages";
 import Image2 from "../public/image2.webp";
 import Circle1 from "../public/circle1.png";
@@ -9,7 +8,7 @@ import Circle3 from "../public/circle3.png";
 import { motion, useDragControls } from "framer-motion";
 
 export default function FadeInSection({ Ref }: refProp) {
-  
+
   return (
     <div className="bg-white font-Poppins text-justify" ref={Ref}>
       <motion.div
@@ -36,20 +35,20 @@ export default function FadeInSection({ Ref }: refProp) {
           </motion.p>
 
           <AnimateOnScroll animation="fadeInUp" duration={2}>
-            <motion.div whileHover={{scale:1.1}} className="flex flex-row justify-end">
+            <motion.div whileHover={{ scale: 1.1 }} className="flex flex-row justify-end">
               <Image src={Circle1} height={150} width={150} alt="circle1" />
             </motion.div>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fadeInDown" duration={2} delay={1}>
-            <motion.div whileHover={{scale:1.1}} className="flex flex-row justify-center ">
+            <motion.div whileHover={{ scale: 1.1 }} className="flex flex-row justify-center">
               <Image src={Circle2} height={150} width={150} alt="circle1" />
             </motion.div>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fadeIn" duration={2} delay={2}>
-            <motion.div whileHover={{scale:1.1}} className="flex flex-row justify-start ">
-              <Image src={Circle3} height={150} width={150} alt="circle1" />
+            <motion.div whileHover={{ scale: 1.1 }} className="flex flex-row justify-start">
+              <Image src={Circle3} height={150} width={150} alt="circle1"/>
             </motion.div>
           </AnimateOnScroll>
         </div>
